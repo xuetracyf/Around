@@ -7,7 +7,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t [your-docker-user]/around .
+          docker build -t tracyfff/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push [your-docker-user]/around
+          docker push tracyfff/around
 
